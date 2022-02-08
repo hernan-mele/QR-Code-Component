@@ -1,0 +1,114 @@
+:root{
+    -white: hsl(0, 0%, 100%);
+    -light-gray: hsl(212, 45%, 89%);
+    -grayish--blue: hsl(220, 15%, 55%);
+    -dark-blue: hsl(218, 44%, 22%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#card-container{
+    margin: 20px;
+    padding: 250px;
+    background-color: hsl(212, 45%, 89%);
+    box-shadow: 10px 15px 10px hsl(220, 15%, 55%);
+    width: 1440px;
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    width: 45%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 20px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 5px 10px 5px hsl(220, 15%, 55%);
+}
+
+#qr-image{
+    height: 50%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+h1{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    word-wrap: normal;
+}
+
+p{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    word-wrap: normal;
+    font-size: 15px;
+}
+
+@media (max-width: 375px){
+    body{
+        background-color: hsl(212, 45%, 89%);
+    }
+    
+    #card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        min-height: 100vh;
+        max-width: 100vw;
+        box-shadow: 10px 15px 10px hsl(220, 15%, 55%);
+    }
+
+    .card{
+        margin: 0;
+        padding: 20px;
+        min-width: 80vw;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        box-shadow: 5px 10px 5px hsl(220, 15%, 55%);
+}
+
+    #qr-image{
+        max-height: 80%;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+    }
+
+    h1{
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        word-wrap: normal;
+    }
+
+    p{
+        font-family: 'Outfit', sans-serif;
+        font-weight: 400;
+        white-space: pre-wrap;
+        font-size: 15px;
+    }
+
+    footer{
+        margin-top: 150px;
+    }
+}
